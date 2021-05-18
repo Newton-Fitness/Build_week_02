@@ -334,7 +334,7 @@ if __name__ == "__main__":
 
 #	detection.classes_combination(1)
 #	detection.classes_combination(2)
-#	detection.classes_combination(3)
+	detection.classes_combination(3)
 
 #	detection.leave_one_subject_out(1)
 #	detection.leave_one_subject_out(2)
