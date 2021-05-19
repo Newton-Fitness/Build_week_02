@@ -46,14 +46,30 @@ import pickle
 #st.title(f"This machine Learning Model has accuracy score of {acc_score}")
 st.text("Newton Fitness app")
 
-a = pd.read_csv("input.csv")
+cleanup_target = {"target": {"Car":1,"Still":2,"Train":3,"Bus":4,"Walking":5}}
+
+a = pd.read_csv("input1.csv")
 filename = 'model.sav'
 loaded_model = pickle.load(open(filename, 'rb'))
 y_pred=loaded_model.predict(a)
 st.text(y_pred)
 #st.text(type(y_pred))
-a = pd.read_csv("input.csv")
+a = pd.read_csv("input2.csv")
 y_pred=loaded_model.predict(a)
+st.text(y_pred)
+
+a = pd.read_csv("input3.csv")
+y_pred=loaded_model.predict(a)
+st.text(y_pred)
+
+a = pd.read_csv("input4.csv")
+y_pred=loaded_model.predict(a)
+st.text(y_pred)
+
+a = pd.read_csv("input5.csv")
+y_pred=loaded_model.predict(a)
+st.text(y_pred)
+st.text(type(y_pred))
 
 #Model
 # simple model
