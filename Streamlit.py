@@ -69,7 +69,7 @@ st.text(y_pred)
 a = pd.read_csv("input5.csv")
 y_pred=loaded_model.predict(a)
 st.text(y_pred)
-st.text(type(y_pred))
+#st.text(type(y_pred))  numpy nd array
 
 #Model
 # simple model
